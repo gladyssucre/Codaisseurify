@@ -1,0 +1,22 @@
+
+<p><img src="<%= @artist.image %>"/></p>
+<h2><%= @artist.name %> </h2>
+<br />
+<p><%= @artist.bio %></p>
+<br />
+<h3> Our Favorite songs </h3>
+<% @songs.each do |song|%>
+  <% if song.artist == @artist%>
+  <ul>
+    <li><%=song.name%> was realeased in <%=song.year%> in the album <%=song.album%>. Click for the <a href="song.lyrics">lyrics</a>
+    <br />
+    <%= link_to "Delete song", song_path(song.id), class: "btn btn-secondary", method: :delete, data: { confirm: "Are you sure?" } %> </li>
+  </ul>
+
+  <% end %>
+<% end %>
+<br />
+
+<%= link_to "[Add new song]", new_song_path(@artist.id), class: "btn btn-secondary" %>
+<br />
+<%= link_to "[Delete Artist]", artist_path(@artist.id),class: "btn btn-secondary", method: :delete, data: { confirm: "Are you sure?" } %>

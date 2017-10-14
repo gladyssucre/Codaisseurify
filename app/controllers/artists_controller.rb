@@ -8,6 +8,13 @@ class ArtistsController < ApplicationController
       @songs=Song.all
     end
 
+    def destroy
+     @artist = Artist.find(params[:id])
+     @artist.destroy
+     redirect_to root_path
+     end
+
+#have not used them
     def new
       @artist = artists.new
     end

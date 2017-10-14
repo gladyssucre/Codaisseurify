@@ -1,7 +1,9 @@
-<h1>Browse trhough our favorite artists</h1>
+<h1>Browse through our favorite artists</h1>
 
 <% @artists.each do |artist|%>
 <p><%= link_to artist.name, artist_path(artist.id) %></p>
 <img src="<%= artist.image %>"/>
-
+<br />
+<br />
+<br />    
 <% end %>

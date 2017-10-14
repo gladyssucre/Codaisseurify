@@ -15,9 +15,9 @@ album: "Crash",
 year: 1996,
 lyrics: "https://www.azlyrics.com/lyrics/davematthewsband/crashintome.html", artist: dmb)
 
-dmb2 = Song.create!(name: "Crash Into Me", album: "Big Whiskey & the GrooGrux King", year: 2009 , lyrics: "https://www.azlyrics.com/lyrics/davematthewsband/divein.html", artist: dmb)
+dmb2 = Song.create!(name: "Dive In", album: "Big Whiskey & the GrooGrux King", year: 2009 , lyrics: "https://www.azlyrics.com/lyrics/davematthewsband/divein.html", artist: dmb)
 
-dmb3 = Song.create!(name: "Ants Marching", album: "Remember Two Things", year: 1993, lyrics: "https://www.azlyrics.com/lyrics/davematthewsband/antsmarching.html", artist: maroon5)
+dmb3 = Song.create!(name: "Ants Marching", album: "Remember Two Things", year: 1993, lyrics: "https://www.azlyrics.com/lyrics/davematthewsband/antsmarching.html", artist: dmb)
 
 ak1 = Song.create!(name: "Girl on Fire", album: "Girl on Fire", year: 2012, lyrics: "https://play.google.com/music/preview/Tdj7222t4kesys2neyvck7fhmn4?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-songlyrics", artist: aliciakeys)
 
