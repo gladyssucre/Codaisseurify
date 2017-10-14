@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root "artist#index"
-    resources :artists do
-      resources :songs
-    end
+
+
+root :to => "pages#home"
+
+  resources :artists
+  resources :songs
+
   end
