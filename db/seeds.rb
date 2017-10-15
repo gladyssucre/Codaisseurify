@@ -1,7 +1,7 @@
 Song.destroy_all
 Artist.destroy_all
 
-maroon5 = Artist.create!(name: "Maroon 5", image: "https://res.cloudinary.com/drp9nvz64/image/upload/t_media_lib_thumb/v1507967051/Maroon5_nexeyz.jpg", bio: "Maroon 5 is an American pop rock band that originated in Los Angeles, California.[9][10] It currently consists of lead vocalist Adam Levine, keyboardist and rhythm guitarist Jesse Carmichael, bassist Mickey Madden, lead guitarist James Valentine, drummer Matt Flynn, keyboardist PJ Morton and multi-instrumentalist Sam Farrar.")
+maroon5 = Artist.create!(name: "Maroon 5", image: "https://res.cloudinary.com/drp9nvz64/image/upload/t_media_lib_thumb/v1507967051/Maroon5_nexeyz.jpg", bio: "Maroon 5 is an American pop rock band that originated in Los Angeles, California. It currently consists of lead vocalist Adam Levine, keyboardist and rhythm guitarist Jesse Carmichael, bassist Mickey Madden, lead guitarist James Valentine, drummer Matt Flynn, keyboardist PJ Morton and multi-instrumentalist Sam Farrar.")
 
 ladygaga = Artist.create!(name: "Lady Gaga", image: "https://res.cloudinary.com/drp9nvz64/image/upload/t_media_lib_thumb/v1507967049/Lady_Gaga_gnx0uy.jpg", bio: "Stefani Joanne Angelina Germanotta (born March 28, 1986), known professionally as Lady Gaga, is an American singer, songwriter, and actress. A popular contemporary recording artist, she is known for experimenting with new musical ideas and images and for her unconventionality and provocative work.")
 

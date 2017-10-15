@@ -1,22 +1,27 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+<img src="<%= @artist.image %>"/>
+<%= @artist.name %>
+</div>
+  <div class="panel-body">
+    <%= @artist.bio %>
+  </div>
+  <div class="panel-heading">
+    Our Favorite songs
+  </div>
+  <div class="panel-body">
 
-<p><img src="<%= @artist.image %>"/></p>
-<h2><%= @artist.name %> </h2>
-<br />
-<p><%= @artist.bio %></p>
-<br />
-<h3> Our Favorite songs </h3>
 <% @songs.each do |song|%>
   <% if song.artist == @artist%>
-  <ul>
+    <ul>
     <li><%=song.name%> was realeased in <%=song.year%> in the album <%=song.album%>. Click for the <a href="song.lyrics">lyrics</a>
-    <br />
     <%= link_to "Delete song", song_path(song.id), class: "btn btn-secondary", method: :delete, data: { confirm: "Are you sure?" } %> </li>
-  </ul>
-
+    </ul>
   <% end %>
 <% end %>
+  </div>
 <br />
-
-<%= link_to "[Add new song]", new_song_path(@artist.id), class: "btn btn-secondary" %>
+</div>
+<%= link_to "Add new song", new_song_path(@artist.id), class: "btn btn-secondary" %>
 <br />
-<%= link_to "[Delete Artist]", artist_path(@artist.id),class: "btn btn-secondary", method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Delete Artist", artist_path(@artist.id),class: "btn btn-secondary", method: :delete, data: { confirm: "Are you sure?" } %>
